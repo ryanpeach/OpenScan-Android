@@ -7,11 +7,11 @@ public class Capture {
 	
     private native long createCapture();
     private native void destroyCapture(long ptr);
-    private native void setFrame(long ptr, Mat frame);
-    private native long runProcess(long ptr);
-    private native Mat getMat(long ptr);
+    private native void setFrame(long ptr, long frame);
+    private native Mat[] runProcess(long ptr);
     
     private native void setValue(long ptr, int param, double value);
+    private native int getValue(long ptr, int param);
     
     static {
     	System.loadLibrary("CaptureJNI");
@@ -38,19 +38,25 @@ public class Capture {
     public void destroy() {
     	destroyCapture(ptr_);
     }
+	public void close() {destroy();}
     
     public void Frame(Mat frame) {
-    	setFrame(ptr_, frame);
+    	setFrame(ptr_, frame.getNativeObjAddr());
     }
     
     public Mat[] process() {
-    	long matptr = runProcess(ptr_);
-        if (matptr == -1) {return new Mat[2];}
-    	Mat[] out = {getMat(matptr),getMat(matptr+1)};
-    	return out;
+		Mat m1 = new Mat();
+		Mat m2 = new Mat();
+		Mat m3 = new Mat();
+    	Mat[] out = runProcess(ptr_, m1.getNativeObjAddr(), m2.getNativeObjAddr(), m3.getNativeObjAddr());
+    	return {m1,m2,m3};
     }
     
     public void setValue(Param param, double value) {
     	setValue(ptr_, param.getValue(), value);
+    }
+
+    public int getValue(Param param) {
+    	getValue(ptr_, param.getValue());
     }
 }
