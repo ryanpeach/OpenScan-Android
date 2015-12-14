@@ -1,6 +1,6 @@
-[submodule "openscan/src/main/resources/cpp"]
-	path = openscan/src/main/resources/cpp
+[submodule "openscan/src/main/openscan"]
+	path = openscan/src/main/openscan
 	url = http://www.github.com/ryanpeach/openscan
-[submodule "openscan/src/main/resources/material"]
-	path = openscan/src/main/resources/material
-	url = http://github.com/google/material-design-icons
+[submodule "openscan/src/main/material"]
+	path = openscan/src/main/material
+	url = http://www.github.com/google/material-design-icons

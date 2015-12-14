@@ -2,7 +2,7 @@
 
 #include "opencv2/core.hpp"
 #include <vector>
-#include "../resources/cpp/capture.hpp"
+#include "../openscan/capture.hpp"
 
 using namespace std;
 using namespace cv;
