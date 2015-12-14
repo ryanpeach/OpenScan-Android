@@ -3,6 +3,7 @@
 #include <vector>
 #include "CaptureJNI.h"
 #include "CaptureJNI_Param.h"
+#include "../resources/cpp/capture.hpp"
 
 using namespace std;
 using namespace cv;
