@@ -6,6 +6,6 @@ OPENCV_CAMERA_MODULES:=on
 OPENCV_INSTALL_MODULES:=on
 include ../../sdk/native/jni/OpenCV.mk
 
-LOCAL_MODULE    := jni
-LOCAL_SRC_FILES := jni.cpp
+LOCAL_SRC_FILES := CaptureJNI.c
+LOCAL_MODULE    := CaptureJNI
 include $(BUILD_SHARED_LIBRARY)
