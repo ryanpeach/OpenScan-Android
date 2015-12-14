@@ -1,5 +1,6 @@
 package com.github.openscan;
 
+import org.opencv.android.OpenCVLoader;
 import org.opencv.core.Mat;
 
 public class Capture {
@@ -8,13 +9,16 @@ public class Capture {
     private native long createCapture();
     private native void destroyCapture(long ptr);
     private native void setFrame(long ptr, long frame);
-    private native Mat[] runProcess(long ptr);
+    private native Mat[] runProcess(long ptr, long M1, long M2, long M3);
     
     private native void setValue(long ptr, int param, double value);
     private native int getValue(long ptr, int param);
     
     static {
-    	System.loadLibrary("Capture");
+    	System.loadLibrary("CaptureJNI");
+        if (!OpenCVLoader.initDebug()) {
+            // Handle initialization error
+        }
     }
     
     public enum Param {
@@ -49,7 +53,7 @@ public class Capture {
 		Mat m2 = new Mat();
 		Mat m3 = new Mat();
     	Mat[] out = runProcess(ptr_, m1.getNativeObjAddr(), m2.getNativeObjAddr(), m3.getNativeObjAddr());
-    	return {m1,m2,m3};
+    	return new Mat[]{m1,m2,m3};
     }
     
     public void setValue(Param param, double value) {
@@ -57,6 +61,6 @@ public class Capture {
     }
 
     public int getValue(Param param) {
-    	getValue(ptr_, param.getValue());
+    	return getValue(ptr_, param.getValue());
     }
 }

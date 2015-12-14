@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_launcher.png",
+        "source": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_check_circle_white.png",
+        "source": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/res/drawable-xxhdpi/ic_check_circle_white.png"
+    }
+]

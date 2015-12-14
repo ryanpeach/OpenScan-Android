@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/OpenScan-Android.iml" filepath="$PROJECT_DIR$/OpenScan-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openCVLibrary300/openCVLibrary300.iml" filepath="$PROJECT_DIR$/openCVLibrary300/openCVLibrary300.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openscan/openscan.iml" filepath="$PROJECT_DIR$/openscan/openscan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openscan-android.iml" filepath="$PROJECT_DIR$/openscan-android.iml" />
     </modules>
   </component>
 </project>

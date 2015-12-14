@@ -1,8 +1,7 @@
 #include <jni.h>
+
 #include "opencv2/core.hpp"
 #include <vector>
-#include "CaptureJNI.h"
-#include "CaptureJNI_Param.h"
 #include "../resources/cpp/capture.hpp"
 
 using namespace std;

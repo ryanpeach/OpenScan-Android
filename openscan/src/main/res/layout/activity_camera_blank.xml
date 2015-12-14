@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0099cc"
-    tools:context="com.github.openscan.Camera" >
+    tools:context="com.github.openscan.CameraBlank" >
 
     <!--
          The primary full-screen view. This can be replaced with whatever view
@@ -24,7 +24,7 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true" >
 
-        <!-- 
+        <!--
         	The primary buttons and preview layout.
         -->
         <RelativeLayout
@@ -36,11 +36,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
-                <!-- 
+                <!--
         		The main image display.
         		Source: http://docs.opencv.org/2.4/doc/tutorials/introduction/android_binary_package/dev_with_OCV_on_Android.html#using-opencv-library-within-your-android-project
        			-->
-       			<org.opencv.android.JavaCameraView
+                <org.opencv.android.JavaCameraView
                     android:id="@+id/capture_main"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
@@ -72,15 +72,15 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="@dimen/margin_size"
                     android:layout_marginBottom="@dimen/margin_size"
-                    android:src="@drawable/abc_btn_colored_material" />
+                    android:src="@drawable/ic_check_circle_white" />
 
             </RelativeLayout>
 
-        	
 
-        
-        
-        </RelativeLayout>        
+
+
+
+        </RelativeLayout>
 
     </FrameLayout>
 

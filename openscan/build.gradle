@@ -10,7 +10,7 @@ android {
         targetSdkVersion 21
 
         ndk {
-            moduleName "jni"
+            moduleName "CaptureJNI"
         }
     }
 
