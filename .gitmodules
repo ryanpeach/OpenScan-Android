@@ -3,4 +3,4 @@
 	url = http://www.github.com/ryanpeach/openscan
 [submodule "openscan/src/main/resources/material"]
 	path = openscan/src/main/resources/material
-	url = https://github.com/google/material-design-icons.git
+	url = http://github.com/google/material-design-icons
