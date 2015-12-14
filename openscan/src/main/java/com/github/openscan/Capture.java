@@ -14,7 +14,7 @@ public class Capture {
     private native void setValue(long ptr, int param, double value);
     
     static {
-    	System.loadLibrary("CaptureJNI");
+    	System.loadLibrary("Capture");
     }
     
     public enum Param {
