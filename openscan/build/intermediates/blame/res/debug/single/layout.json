@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/home/rgpeach10/Documents/Workspace/openscan-android/openscan/build/intermediates/res/merged/debug/layout/activity_camera_blank.xml",
-        "source": "/home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/res/layout/activity_camera_blank.xml"
-    },
-    {
         "merged": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/res/merged/debug/layout/activity_camera_blank.xml",
         "source": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/res/layout/activity_camera_blank.xml"
     }

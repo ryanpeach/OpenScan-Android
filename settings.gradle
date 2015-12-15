@@ -1,2 +1,2 @@
-include ':openCVLibrary300'
+include ':openCVLibrary300', ':appcompat'
 include ':openscan'

@@ -4,14 +4,6 @@
         "source": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/res/drawable-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/rgpeach10/Documents/Workspace/openscan-android/openscan/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_check_circle_white.png",
-        "source": "/home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/res/drawable-xhdpi/ic_check_circle_white.png"
-    },
-    {
-        "merged": "/home/rgpeach10/Documents/Workspace/openscan-android/openscan/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
-        "source": "/home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/res/drawable-xhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_check_circle_white.png",
         "source": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/res/drawable-xhdpi/ic_check_circle_white.png"
     }

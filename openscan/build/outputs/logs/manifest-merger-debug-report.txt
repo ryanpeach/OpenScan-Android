@@ -1,86 +1,86 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:2:1-40:12
+ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:2:1-40:12
 	xmlns:android
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:2:11-69
 	package
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:3:5-34
-		INJECTED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
-		INJECTED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:3:5-34
+		INJECTED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
+		INJECTED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:5:5-30
-		INJECTED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
-		INJECTED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
+		INJECTED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
 	android:versionCode
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:4:5-28
-		INJECTED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
-		INJECTED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
+		INJECTED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
 uses-sdk
-ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:7:5-9:41
-MERGED from [openscan-android:openCVLibrary300:unspecified] /home/rgpeach10/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/openscan-android/openCVLibrary300/unspecified/AndroidManifest.xml:7:5-9:40
-MERGED from [com.android.support:support-v4:23.1.1] /home/rgpeach10/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:7:5-9:41
+MERGED from [openscan-android:openCVLibrary300:unspecified] /home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/openscan-android/openCVLibrary300/unspecified/AndroidManifest.xml:7:5-9:40
+MERGED from [com.android.support:support-v4:23.1.1] /home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:9:9-38
-		INJECTED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
-		INJECTED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:9:9-38
+		INJECTED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
+		INJECTED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:8:9-34
-		INJECTED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
-		INJECTED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:8:9-34
+		INJECTED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
+		INJECTED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
 uses-permission#android.permission.CAMERA
-ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:11:5-65
+ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:11:5-65
 	android:name
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:11:22-62
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:11:22-62
 uses-feature#android.hardware.camera
-ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:13:5-15:36
+ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:13:5-15:36
 	android:required
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:15:9-33
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:15:9-33
 	android:name
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:14:9-47
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:14:9-47
 uses-feature#android.hardware.camera.autofocus
-ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:16:5-18:36
+ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:16:5-18:36
 	android:required
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:18:9-33
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:18:9-33
 	android:name
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:17:9-57
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:17:9-57
 uses-feature#android.hardware.camera.front
-ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:19:5-21:36
+ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:19:5-21:36
 	android:required
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:21:9-33
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:21:9-33
 	android:name
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:20:9-53
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:20:9-53
 uses-feature#android.hardware.camera.front.autofocus
-ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:22:5-24:36
+ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:22:5-24:36
 	android:required
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:24:9-33
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:24:9-33
 	android:name
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:23:9-63
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:23:9-63
 android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:26:5-89
+ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:26:5-89
 	android:name
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:26:30-86
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:26:30-86
 android:uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:27:5-83
+ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:27:5-83
 	android:name
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:27:30-80
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:27:30-80
 android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:28:5-88
+ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:28:5-88
 	android:name
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:28:30-85
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:28:30-85
 application
-ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:30:5-38:19
-MERGED from [com.android.support:support-v4:23.1.1] /home/rgpeach10/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:30:5-38:19
+MERGED from [com.android.support:support-v4:23.1.1] /home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:33:9-41
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:33:9-41
 	android:allowBackup
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:31:9-35
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:31:9-35
 	android:icon
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:32:9-45
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:32:9-45
 	android:theme
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:34:9-67
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:34:9-67
 activity#com.github.openscan.CameraBlank
-ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:35:9-37:76
+ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:35:9-37:76
 	android:label
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:37:13-64
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:37:13-64
 	android:name
-		ADDED from /home/rgpeach10/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:36:13-40
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:36:13-40
