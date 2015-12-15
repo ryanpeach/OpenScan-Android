@@ -65,13 +65,14 @@
                     android:layout_marginLeft="@dimen/margin_size" />
 
                 <ImageButton
-                    android:id="@+id/actionButton1"
+                    android:id="@+id/save_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="@dimen/margin_size"
                     android:layout_marginBottom="@dimen/margin_size"
+                    android:onClick="saveImage"
                     android:src="@drawable/ic_check_circle_white" />
 
             </RelativeLayout>

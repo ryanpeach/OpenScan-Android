@@ -17,14 +17,17 @@ ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/mai
 		INJECTED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
 uses-sdk
 ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:7:5-9:41
-MERGED from [openscan-android:openCVLibrary300:unspecified] /home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/openscan-android/openCVLibrary300/unspecified/AndroidManifest.xml:7:5-9:40
+MERGED from [openscan-android:openCVLibrary300:unspecified] /home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/openscan-android/openCVLibrary300/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [openscan-android:appcompat:unspecified] /home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/openscan-android/appcompat/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.1.1] /home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.1.1] /home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:9:9-38
 		INJECTED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
 		INJECTED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:8:9-34
+		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:8:9-35
 		INJECTED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
 		INJECTED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml
 uses-permission#android.permission.CAMERA
@@ -69,7 +72,12 @@ ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/mai
 		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:28:30-85
 application
 ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:30:5-38:19
+MERGED from [openscan-android:appcompat:unspecified] /home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/openscan-android/appcompat/unspecified/AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:appcompat-v7:23.1.1] /home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] /home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+	android:supportsRtl
+		ADDED from [openscan-android:appcompat:unspecified] /home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/openscan-android/appcompat/unspecified/AndroidManifest.xml:14:9-35
 	android:label
 		ADDED from /home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/AndroidManifest.xml:33:9-41
 	android:allowBackup
