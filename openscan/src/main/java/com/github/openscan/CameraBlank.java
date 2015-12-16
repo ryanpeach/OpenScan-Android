@@ -4,6 +4,7 @@ import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.os.Bundle;
 import android.app.Activity;
+import android.util.Log;
 
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
@@ -36,10 +37,13 @@ import java.io.ByteArrayOutputStream;
 //Source: http://docs.opencv.org/2.4/doc/tutorials/introduction/android_binary_package/dev_with_OCV_on_Android.html#using-opencv-library-within-your-android-project
 public class CameraBlank extends Activity implements CameraBridgeViewBase.CvCameraViewListener {
 
+    private static final String TAG = "Camera";
+
     private Capture C;
-    private Mat Preview, thisFrame;
-    private ImageView PreviewV, FrameV;
-    private Bitmap PreviewBMP, FrameBMP;
+    private Mat Preview, Data, thisFrame;
+    private ImageView PreviewV, DataV, FrameV;
+    private Bitmap PreviewBMP, DataBMP, FrameBMP;
+    private boolean devMode = true;
 
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
@@ -47,10 +51,12 @@ public class CameraBlank extends Activity implements CameraBridgeViewBase.CvCame
             switch (status) {
                 case LoaderCallbackInterface.SUCCESS:
                 {
+                    Log.v(TAG, "OpenCV Manager Connected!");
                     mOpenCvCameraView.enableView();
                 } break;
                 default:
                 {
+                    Log.e(TAG, "OpenCV Manager NOT Connected!");
                     super.onManagerConnected(status);
                 } break;
             }
@@ -60,6 +66,7 @@ public class CameraBlank extends Activity implements CameraBridgeViewBase.CvCame
     @Override
     public void onResume()
     {
+        Log.v(TAG, "Resuming...");
         super.onResume();
         OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_2_4_6, this, mLoaderCallback);
     }
@@ -68,6 +75,8 @@ public class CameraBlank extends Activity implements CameraBridgeViewBase.CvCame
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        Log.v(TAG, "Creating Camera!");
+
         super.onCreate(savedInstanceState);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_camera_blank);
@@ -81,17 +90,22 @@ public class CameraBlank extends Activity implements CameraBridgeViewBase.CvCame
         // Get Views
         FrameV = (ImageView) findViewById(R.id.capture_main);
         PreviewV = (ImageView) findViewById(R.id.capture_preview);
+        DataV = (ImageView) findViewById(R.id.capture_data);
+
+        if(!devMode) {DataV.setVisibility(View.INVISIBLE);}
     }
 
     @Override
     public void onPause()
     {
+        Log.v(TAG, "Paused...");
         super.onPause();
         if (mOpenCvCameraView != null)
             mOpenCvCameraView.disableView();
     }
 
     public void onDestroy() {
+        Log.v(TAG, "Destroying Camera.");
         super.onDestroy();
         if (mOpenCvCameraView != null)
             mOpenCvCameraView.disableView();
@@ -101,9 +115,11 @@ public class CameraBlank extends Activity implements CameraBridgeViewBase.CvCame
     }
 
     public void onCameraViewStarted(int width, int height) {
+        Log.v(TAG, "Camera View Started.");
     }
 
     public void onCameraViewStopped() {
+        Log.v(TAG, "Camera View Stopped.");
     }
 
     public Mat onCameraFrame(Mat inputFrame) {
@@ -113,7 +129,9 @@ public class CameraBlank extends Activity implements CameraBridgeViewBase.CvCame
 
         //Set preview to out[1] if is not null
         if (!out[1].empty()) {
+            Log.i(TAG, "Page Found!");
             Preview = out[2];
+            Data = out[1];
             thisFrame = out[0];
         }
         else {thisFrame = inputFrame;}
@@ -124,6 +142,12 @@ public class CameraBlank extends Activity implements CameraBridgeViewBase.CvCame
         Utils.matToBitmap(thisFrame, FrameBMP);
         Utils.matToBitmap(Preview, PreviewBMP);
 
+        if(devMode) {
+            DataBMP = Bitmap.createBitmap(thisFrame.cols(), thisFrame.rows(), Bitmap.Config.ARGB_8888);
+            Utils.matToBitmap(Data, DataBMP);
+            DataV.setImageBitmap(DataBMP);
+        }
+
         // Update Views
         FrameV.setImageBitmap(FrameBMP);
         PreviewV.setImageBitmap(PreviewBMP);
@@ -133,6 +157,7 @@ public class CameraBlank extends Activity implements CameraBridgeViewBase.CvCame
 
     public void saveImage(View view) {
         if(!Preview.empty()) {
+            Log.i(TAG, "Saving Image...");
             ByteArrayOutputStream bytes = new ByteArrayOutputStream();
             PreviewBMP.compress(Bitmap.CompressFormat.JPEG, 100, bytes);
             MediaStore.Images.Media.insertImage(getContentResolver(), PreviewBMP, null, null);

@@ -160,12 +160,12 @@
         "source": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-mdpi/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_launcher.png",
-        "source": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/res/drawable-mdpi/ic_launcher.png"
-    },
-    {
         "merged": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png",
         "source": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-mdpi/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_launcher.png",
+        "source": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/src/main/res/drawable-mdpi/ic_launcher.png"
     },
     {
         "merged": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png",

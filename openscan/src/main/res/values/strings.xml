@@ -6,4 +6,11 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_camera_blank">CameraBlank</string>
 
+    <string-array name="methods">
+        <item>Focus Point Corners</item>
+        <item>Strong Border</item>
+        <item>Regular Page</item>
+        <item>Automatic</item>
+    </string-array>
+
 </resources>
