@@ -4,6 +4,8 @@ import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.os.Bundle;
 import android.app.Activity;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import org.opencv.android.BaseLoaderCallback;
@@ -35,7 +37,7 @@ import java.io.ByteArrayOutputStream;
 
 
 //Source: http://docs.opencv.org/2.4/doc/tutorials/introduction/android_binary_package/dev_with_OCV_on_Android.html#using-opencv-library-within-your-android-project
-public class CameraBlank extends Activity implements CameraBridgeViewBase.CvCameraViewListener {
+public class CameraBlank extends AppCompatActivity implements CameraBridgeViewBase.CvCameraViewListener {
 
     private static final String TAG = "Camera";
 

@@ -20,6 +20,7 @@ public class Capture {
     
     static {
     	System.loadLibrary("CaptureJNI");
+        System.loadLibrary("opencv_java3");
         if (!OpenCVLoader.initDebug()) {
             // Handle initialization error
             Log.e(TAG,"CaptureJNI Instantiation Error");
