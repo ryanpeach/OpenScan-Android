@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /home/ryanpeach/Documents/Workspace/openscan-android/openCVLibrary300/src/main/aidl/org/opencv/engine/OpenCVEngineInterface.aidl
+ * Original file: /home/rgpeach10/Documents/Workspace/openscan-android/openCVLibrary300/src/main/aidl/org/opencv/engine/OpenCVEngineInterface.aidl
  */
 package org.opencv.engine;
 /**

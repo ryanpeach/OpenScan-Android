@@ -1,3 +1,5 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
 apply plugin: 'com.android.application'
 
 android {
@@ -8,10 +10,26 @@ android {
         applicationId "com.github.openscan"
         minSdkVersion 15
         targetSdkVersion 23
+    }
 
-        ndk {
-            moduleName "CaptureJNI"
-        }
+    sourceSets.main.jni.srcDirs = []
+    sourceSets.main.jniLibs.srcDirs = ['src/main/libs']
+
+    task ndkBuild(type: Exec, description: 'Compile JNI source via NDK') {
+        def ndkDir = android.ndkDirectory.getAbsolutePath() + "/ndk-build"
+        def projpath = file('build/intermediates/ndk').getAbsolutePath()
+        def libsout = file('src/main/jniLibs').getAbsolutePath()
+        def buildscript = file('src/main/jni/Android.mk').getAbsolutePath()
+        def appmk = file('src/main/jni/Application.mk').getAbsolutePath()
+        commandLine ndkDir,
+                'NDK_PROJECT_PATH='+projpath,
+                'NDK_LIBS_OUT='+libsout,
+                'APP_BUILD_SCRIPT='+buildscript,
+                'NDK_APPLICATION_MK='+appmk
+    }
+
+    tasks.withType(JavaCompile) {
+        compileTask -> compileTask.dependsOn ndkBuild
     }
 
     buildTypes {
@@ -20,10 +38,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+
 }
 
 dependencies {
     compile project(':openCVLibrary300')
-    compile project(':appcompat')
-    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.android.support:appcompat-v7:23.1.1'
 }
