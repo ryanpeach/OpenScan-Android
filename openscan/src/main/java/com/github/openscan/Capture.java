@@ -28,17 +28,74 @@ public class Capture {
     }
     
     public enum Param {
-    	ANGLETOL(0), DISTTOL(1), POLYTOL(2), ASPECTRATIO(3),
-    	SIZERATIO(4), RATIOTOL(5), ETOL1(6), ETOL2(7), ESIZE(8), METHOD(9);
+    	ANGLETOL(0), DISTRATIO(1), POLYTOL(2), ASPECTRATIO(3),
+    	SIZERATIO(4), RATIOTOL(5);
     
     	private final int value;
-    	private Param(int value){
-    		this.value = value;
+        private Param(int v){
+            this.value = v;
+        }
+
+    	public static Param getParam(int v){
+    		switch(v) {
+                case 0: return ANGLETOL;
+                case 1: return DISTRATIO;
+                case 2: return POLYTOL;
+                case 3: return ASPECTRATIO;
+                case 4: return SIZERATIO;
+                case 5: return RATIOTOL;
+                default: return null;
+            }
     	}
     	
     	public int getValue() {
     		return value;
     	}
+
+        public String toString() {
+            switch(value) {
+                case 0: return "ANGLETOL";
+                case 1: return "DISTRATIO";
+                case 2: return "POLYTOL";
+                case 3: return "ASPECTRATIO";
+                case 4: return "SIZERATIO";
+                case 5: return "RATIOTOL";
+                default: return null;
+            }
+        }
+    }
+
+    public enum Method {
+        FPCORNERS(0), STRONGBORDER(1), REGBORDER(2), AUTOBORDER(3);
+
+        private final int value;
+        private Method(int value){
+            this.value = value;
+        }
+
+        public static Method getMethod(int v){
+            switch(v) {
+                case 0: return FPCORNERS;
+                case 1: return STRONGBORDER;
+                case 2: return REGBORDER;
+                case 3: return AUTOBORDER;
+                default: return null;
+            }
+        }
+
+        public int getValue() {
+            return value;
+        }
+
+        public String toString() {
+            switch(value) {
+                case 0: return "FPCORNERS";
+                case 1: return "STRONGBORDER";
+                case 2: return "REGBORDER";
+                case 3: return "AUTOBORDER";
+                default: return null;
+            }
+        }
     }
     
     public Capture() {
@@ -75,5 +132,11 @@ public class Capture {
         int v = getValue(ptr_, param.getValue());
         Log.v(TAG, String.format("Returned Param %d: %f", v, param.getValue()));
         return v;
+    }
+
+    public void selectMethod(Method m) {
+        Log.v(TAG, "Selecting Method: " + m.toString());
+        if (m==null){m = Method.AUTOBORDER;}
+        setValue(ptr_, 9, m.getValue());
     }
 }

@@ -17,6 +17,9 @@ import org.opencv.core.Mat;
 import org.opencv.android.Utils;
 import android.graphics.Bitmap;
 import android.provider.MediaStore;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import org.opencv.core.Core;
 import org.opencv.core.CvType;
@@ -32,20 +35,29 @@ import android.view.MotionEvent;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.SeekBar;
+import android.widget.Spinner;
 
 import java.io.ByteArrayOutputStream;
 
 
 //Source: http://docs.opencv.org/2.4/doc/tutorials/introduction/android_binary_package/dev_with_OCV_on_Android.html#using-opencv-library-within-your-android-project
-public class CameraBlank extends AppCompatActivity implements CameraBridgeViewBase.CvCameraViewListener {
+public class CameraBlank extends AppCompatActivity implements CameraBridgeViewBase.CvCameraViewListener,
+        View.OnClickListener, SeekBar.OnSeekBarChangeListener, AdapterView.OnItemSelectedListener {
 
     private static final String TAG = "Camera";
+    private int seekProgress;
 
     private Capture C;
     private Mat Preview, Data, thisFrame;
-    private ImageView PreviewV, DataV, FrameV;
     private Bitmap PreviewBMP, DataBMP, FrameBMP;
     private boolean devMode = true;
+
+    // Views
+    private ImageView PreviewV, DataV, FrameV;
+    private ImageButton SaveButton;
+    private SeekBar AT, DR, PT, SR, RT;
+    private Spinner MethodSel;
 
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
@@ -90,11 +102,45 @@ public class CameraBlank extends AppCompatActivity implements CameraBridgeViewBa
         C = new Capture();
 
         // Get Views
+        Log.v(TAG, "Finding Views...");
         FrameV = (ImageView) findViewById(R.id.capture_main);
         PreviewV = (ImageView) findViewById(R.id.capture_preview);
         DataV = (ImageView) findViewById(R.id.capture_data);
+        SaveButton = (ImageButton) findViewById(R.id.save_button);
+        MethodSel = (Spinner) findViewById(R.id.method_sel);
+        AT = (SeekBar) findViewById(R.id.angletol);
+        DR = (SeekBar) findViewById(R.id.distratio);
+        PT = (SeekBar) findViewById(R.id.polytol);
+        SR = (SeekBar) findViewById(R.id.sizeratio);
+        RT = (SeekBar) findViewById(R.id.ratiotol);
 
-        if(!devMode) {DataV.setVisibility(View.INVISIBLE);}
+        if(!devMode) {
+            Log.i(TAG, "DevMode Active.");
+            DataV.setVisibility(View.INVISIBLE);}
+
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.methods, android.R.layout.simple_spinner_item);
+        // Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Apply the adapter to the spinner
+        MethodSel.setAdapter(adapter);
+
+        // Set Progress
+        Log.v(TAG, "Setting SeekBar Progress...");
+        AT.setProgress(C.getValue(Capture.Param.ANGLETOL));
+        DR.setProgress(C.getValue(Capture.Param.DISTRATIO));
+        PT.setProgress(C.getValue(Capture.Param.POLYTOL));
+        SR.setProgress(C.getValue(Capture.Param.SIZERATIO));
+        RT.setProgress(C.getValue(Capture.Param.RATIOTOL));
+
+        // Set Listeners
+        Log.v(TAG, "Setting Listeners...");
+        AT.setOnSeekBarChangeListener(this); DR.setOnSeekBarChangeListener(this);
+        PT.setOnSeekBarChangeListener(this); SR.setOnSeekBarChangeListener(this);
+        RT.setOnSeekBarChangeListener(this); SaveButton.setOnClickListener(this);
+        MethodSel.setOnItemSelectedListener(this);
+
     }
 
     @Override
@@ -116,6 +162,7 @@ public class CameraBlank extends AppCompatActivity implements CameraBridgeViewBa
         C.destroy();
     }
 
+    // ----------------------- Camera --------------------
     public void onCameraViewStarted(int width, int height) {
         Log.v(TAG, "Camera View Started.");
     }
@@ -157,7 +204,7 @@ public class CameraBlank extends AppCompatActivity implements CameraBridgeViewBa
         return thisFrame;
     }
 
-    public void saveImage(View view) {
+    public void saveImage() {
         if(!Preview.empty()) {
             Log.i(TAG, "Saving Image...");
             ByteArrayOutputStream bytes = new ByteArrayOutputStream();
@@ -166,5 +213,47 @@ public class CameraBlank extends AppCompatActivity implements CameraBridgeViewBa
         }
     }
 
+    // ----------------------- Buttons --------------------
+    @Override
+    public void onClick(View v) {
+        Log.i(TAG, "Button Click: " + v.getId());
+        switch(v.getId()) {
+            case R.id.save_button: saveImage(); break;
+        }
+    }
+
+    // ----------------------- SeekBar --------------------
+    @Override
+    public void onStopTrackingTouch(SeekBar seekBar) {
+        Log.i(TAG, seekBar.getId() + " Stop Tracking Touch: " + seekBar.getProgress());
+        switch(seekBar.getId()) {
+            case R.id.angletol: C.setValue(Capture.Param.ANGLETOL,seekProgress);break;
+            case R.id.distratio: C.setValue(Capture.Param.DISTRATIO,seekProgress);break;
+            case R.id.polytol: C.setValue(Capture.Param.POLYTOL,seekProgress);break;
+            case R.id.sizeratio: C.setValue(Capture.Param.SIZERATIO,seekProgress);break;
+            case R.id.ratiotol: C.setValue(Capture.Param.RATIOTOL,seekProgress);break;
+        }
+    }
+
+    @Override
+    public void onProgressChanged(SeekBar seekBar, int progressValue, boolean fromUser) {
+        Log.i(TAG, seekBar.getId() + " Progress: " + progressValue + "/" + seekBar.getMax());
+        seekProgress = progressValue;
+    }
+
+    @Override
+    public void onStartTrackingTouch(SeekBar seekBar) {
+        Log.i(TAG, seekBar.getId() + " Start Tracking Touch.");
+    }
+
+    // ----------------------- Spinner --------------------
+    public void onItemSelected(AdapterView<?> parent, View view,
+                               int pos, long id) {
+        C.selectMethod(Capture.Method.getMethod(pos));
+    }
+
+    public void onNothingSelected(AdapterView<?> parent) {
+        C.selectMethod(null);
+    }
 }
 

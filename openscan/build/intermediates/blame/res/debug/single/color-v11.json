@@ -4,14 +4,6 @@
         "source": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
     },
     {
-        "merged": "/home/rgpeach10/Documents/Workspace/openscan-android/openscan/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/home/rgpeach10/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
-        "merged": "/home/rgpeach10/Documents/Workspace/openscan-android/openscan/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/home/rgpeach10/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
-    },
-    {
         "merged": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
         "source": "/home/ryanpeach/Documents/Workspace/openscan-android/openscan/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     }

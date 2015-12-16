@@ -72,7 +72,6 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="@dimen/margin_size"
                     android:layout_marginBottom="@dimen/margin_size"
-                    android:onClick="saveImage"
                     android:src="@drawable/ic_check_circle_white" />
 
 
@@ -104,8 +103,7 @@
                     <Spinner
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
-                        android:id="@+id/method_sel"
-                        android:entries="@array/methods" />
+                        android:id="@+id/method_sel" />
 
                     <ImageView
                         android:id="@+id/capture_data"
@@ -115,9 +113,9 @@
                         android:layout_margin="@dimen/margin_size"
                         android:padding="50dp"
                         android:layout_rowSpan="2" />
-                    </GridLayout>
+                </GridLayout>
 
-                    <GridLayout
+                <GridLayout
                     xmlns:android="http://schemas.android.com/apk/res/android"
                     android:id="@+id/fpsborder_options"
                     android:layout_width="match_parent"
@@ -128,39 +126,63 @@
 
                     <TextView
                         android:padding="10dp"
-                        android:text="HelloWorld"
+                        android:text="Angle Tol."
                         android:textColor="#ffffff"
                         android:textSize="20sp" />
                     <SeekBar
                         android:padding="10dp"
                         android:layout_gravity="fill_horizontal"
-                        android:max="1000"
-                        android:progress="0"
-                        android:id="@+id/seekBar1" />
+                        android:max="90"
+                        android:progress="20"
+                        android:id="@+id/angletol" />
 
                     <TextView
                         android:padding="10dp"
-                        android:text="HelloWorld"
+                        android:text="Distance Tol."
                         android:textColor="#ffffff"
                         android:textSize="20sp" />
                     <SeekBar
                         android:padding="10dp"
                         android:layout_gravity="fill_horizontal"
-                        android:max="1000"
-                        android:progress="0"
-                        android:id="@+id/seekBar2" />
+                        android:max="100"
+                        android:progress="20"
+                        android:id="@+id/distratio" />
 
                     <TextView
                         android:padding="10dp"
-                        android:text="HelloWorld"
+                        android:text="Poly Tol."
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+                    <SeekBar
+                        android:padding="10dp"
+                        android:layout_gravity="fill_horizontal"
+                        android:max="30"
+                        android:progress="5"
+                        android:id="@+id/polytol" />
+
+                    <TextView
+                        android:padding="10dp"
+                        android:text="Size Ratio"
                         android:textColor="#ffffff"
                         android:textSize="20sp" />
                     <SeekBar
                         android:padding="10dp"
                         android:layout_gravity="fill_horizontal"
                         android:max="1000"
-                        android:progress="0"
-                        android:id="@+id/seekBar3" />
+                        android:progress="250"
+                        android:id="@+id/sizeratio" />
+
+                    <TextView
+                        android:padding="10dp"
+                        android:text="Ratio Tol."
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+                    <SeekBar
+                        android:padding="10dp"
+                        android:layout_gravity="fill_horizontal"
+                        android:max="1000"
+                        android:progress="100"
+                        android:id="@+id/ratiotol" />
 
                 </GridLayout>
 
