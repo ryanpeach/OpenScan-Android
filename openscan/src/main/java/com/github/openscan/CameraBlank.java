@@ -43,7 +43,7 @@ import java.io.ByteArrayOutputStream;
 
 //Source: http://docs.opencv.org/2.4/doc/tutorials/introduction/android_binary_package/dev_with_OCV_on_Android.html#using-opencv-library-within-your-android-project
 public class CameraBlank extends AppCompatActivity implements CameraBridgeViewBase.CvCameraViewListener,
-        View.OnClickListener, SeekBar.OnSeekBarChangeListener, AdapterView.OnItemSelectedListener {
+        View.OnClickListener, View.OnLongClickListener, SeekBar.OnSeekBarChangeListener, AdapterView.OnItemSelectedListener {
 
     private static final String TAG = "Camera";
     private int seekProgress;
@@ -82,7 +82,9 @@ public class CameraBlank extends AppCompatActivity implements CameraBridgeViewBa
     {
         Log.v(TAG, "Resuming...");
         super.onResume();
-        OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_2_4_6, this, mLoaderCallback);
+        if(!OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_2_4_6, this, mLoaderCallback)){
+        	Log.e(TAG,"CaptureJNI Instantiation Error");
+        }
     }
 
     private CameraBridgeViewBase mOpenCvCameraView;
@@ -138,7 +140,8 @@ public class CameraBlank extends AppCompatActivity implements CameraBridgeViewBa
         Log.v(TAG, "Setting Listeners...");
         AT.setOnSeekBarChangeListener(this); DR.setOnSeekBarChangeListener(this);
         PT.setOnSeekBarChangeListener(this); SR.setOnSeekBarChangeListener(this);
-        RT.setOnSeekBarChangeListener(this); SaveButton.setOnClickListener(this);
+        RT.setOnSeekBarChangeListener(this);
+        SaveButton.setOnClickListener(this); SaveButton.setOnLongClickListener(this);
         MethodSel.setOnItemSelectedListener(this);
 
     }
@@ -204,12 +207,12 @@ public class CameraBlank extends AppCompatActivity implements CameraBridgeViewBa
         return thisFrame;
     }
 
-    public void saveImage() {
+    public void saveImage(Bitmap img) {
         if(!Preview.empty()) {
             Log.i(TAG, "Saving Image...");
             ByteArrayOutputStream bytes = new ByteArrayOutputStream();
             PreviewBMP.compress(Bitmap.CompressFormat.JPEG, 100, bytes);
-            MediaStore.Images.Media.insertImage(getContentResolver(), PreviewBMP, null, null);
+            MediaStore.Images.Media.insertImage(getContentResolver(), img, null, null);
         }
     }
 
@@ -218,7 +221,16 @@ public class CameraBlank extends AppCompatActivity implements CameraBridgeViewBa
     public void onClick(View v) {
         Log.i(TAG, "Button Click: " + v.getId());
         switch(v.getId()) {
-            case R.id.save_button: saveImage(); break;
+            case R.id.save_button: saveImage(PreviewBMP); break;
+        }
+    }
+
+    @Override
+    public boolean onLongClick(View v) {
+        Log.i(TAG, "Long Button Click: " + v.getId());
+        switch(v.getId()) {
+            case R.id.save_button: saveImage(FrameBMP); return true;
+            default: return false;
         }
     }
 

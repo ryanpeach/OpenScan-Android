@@ -9,7 +9,11 @@ public class Capture {
     private static final String TAG = "Capture";
 
     private long ptr_;
-	
+
+    static {
+        System.loadLibrary("CaptureJNI");
+    }
+
     private native long createCapture();
     private native void destroyCapture(long ptr);
     private native void setFrame(long ptr, long frame);
@@ -17,15 +21,6 @@ public class Capture {
     
     private native void setValue(long ptr, int param, double value);
     private native int getValue(long ptr, int param);
-    
-    static {
-    	System.loadLibrary("CaptureJNI");
-        System.loadLibrary("opencv_java3");
-        if (!OpenCVLoader.initDebug()) {
-            // Handle initialization error
-            Log.e(TAG,"CaptureJNI Instantiation Error");
-        }
-    }
     
     public enum Param {
     	ANGLETOL(0), DISTRATIO(1), POLYTOL(2), ASPECTRATIO(3),

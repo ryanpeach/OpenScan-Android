@@ -2,10 +2,11 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 # OpenCV
-OPENCV_INSTALL_MODULES:=on
-OPENCV_CAMERA_MODULES:=on
-OPENCV_LIB_TYPE:=STATIC
+# OPENCV_CAMERA_MODULES:=on
+# OPENCV_INSTALL_MODULES:=on
 include $(LOCAL_PATH)/../../../../OpenCV-android-sdk/sdk/native/jni/OpenCV.mk
+include $(LOCAL_PATH)/../../../../OpenCV-android-sdk/sdk/native/jni/OpenCV-armeabi-v7a.mk
+
 
 LOCAL_MODULE    := CaptureJNI
 LOCAL_SRC_FILES := CaptureJNI.cpp ../openscan/capture.cpp ../openscan/cvmethods.cpp ../openscan/geometry.cpp ../openscan/focus.cpp ../openscan/support.cpp ../openscan/filters.cpp

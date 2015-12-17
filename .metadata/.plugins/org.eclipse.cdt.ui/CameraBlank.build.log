@@ -1,0 +1,19 @@
+00:38:41 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:CaptureJNI: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= CaptureJNI.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= capture.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= cvmethods.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= geometry.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= focus.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= support.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= filters.cpp
+[armeabi-v7a] SharedLibrary  : libCaptureJNI.so
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO jni/../../../../OpenCV-android-sdk/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+
+00:38:50 Build Finished (took 9s.260ms)
+

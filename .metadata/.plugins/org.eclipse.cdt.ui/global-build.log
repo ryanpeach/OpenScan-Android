@@ -1,0 +1,281 @@
+22:19:57 **** Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[x86_64] Compile++      : CaptureJNI <= CaptureJNI.cpp
+[x86_64] Compile++      : CaptureJNI <= capture.cpp
+[x86_64] Compile++      : CaptureJNI <= cvmethods.cpp
+[x86_64] Compile++      : CaptureJNI <= geometry.cpp
+[x86_64] Compile++      : CaptureJNI <= focus.cpp
+[x86_64] Compile++      : CaptureJNI <= support.cpp
+[x86_64] Compile++      : CaptureJNI <= filters.cpp
+[x86_64] Prebuilt       : libopencv_java3.so <= jni/../../../../OpenCV-android-sdk/sdk/native/jni/../libs/x86_64/
+[x86_64] SharedLibrary  : libCaptureJNI.so
+[x86_64] Install        : libCaptureJNI.so => libs/x86_64/libCaptureJNI.so
+[x86_64] Install        : libopencv_java3.so => libs/x86_64/libopencv_java3.so
+22:29:08 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[x86_64] Install        : libCaptureJNI.so => libs/x86_64/libCaptureJNI.so
+[x86_64] Install        : libopencv_java3.so => libs/x86_64/libopencv_java3.so
+22:35:43 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[x86_64] Install        : libCaptureJNI.so => libs/x86_64/libCaptureJNI.so
+[x86_64] Install        : libopencv_java3.so => libs/x86_64/libopencv_java3.so
+22:41:46 **** Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[x86_64] Install        : libCaptureJNI.so => libs/x86_64/libCaptureJNI.so
+[x86_64] Install        : libopencv_java3.so => libs/x86_64/libopencv_java3.so
+22:41:51 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[x86_64] Install        : libCaptureJNI.so => libs/x86_64/libCaptureJNI.so
+[x86_64] Install        : libopencv_java3.so => libs/x86_64/libopencv_java3.so
+22:43:38 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[x86_64] Install        : libCaptureJNI.so => libs/x86_64/libCaptureJNI.so
+[x86_64] Install        : libopencv_java3.so => libs/x86_64/libopencv_java3.so
+22:44:13 **** Clean-only build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build clean 
+[x86_64] Clean          : CaptureJNI [x86_64]
+[x86_64] Clean          : gnustl_shared [x86_64]
+[x86_64] Clean          : gnustl_static [x86_64]
+[x86_64] Clean          : opencv_java3 [x86_64]
+22:44:20 **** Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[x86_64] Compile++      : CaptureJNI <= CaptureJNI.cpp
+[x86_64] Compile++      : CaptureJNI <= capture.cpp
+[x86_64] Compile++      : CaptureJNI <= cvmethods.cpp
+[x86_64] Compile++      : CaptureJNI <= geometry.cpp
+[x86_64] Compile++      : CaptureJNI <= focus.cpp
+[x86_64] Compile++      : CaptureJNI <= support.cpp
+[x86_64] Compile++      : CaptureJNI <= filters.cpp
+[x86_64] Prebuilt       : libopencv_java3.so <= jni/../../../../OpenCV-android-sdk/sdk/native/jni/../libs/x86_64/
+[x86_64] SharedLibrary  : libCaptureJNI.so
+[x86_64] Install        : libCaptureJNI.so => libs/x86_64/libCaptureJNI.so
+[x86_64] Install        : libopencv_java3.so => libs/x86_64/libopencv_java3.so
+22:47:10 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[x86_64] Install        : libCaptureJNI.so => libs/x86_64/libCaptureJNI.so
+[x86_64] Install        : libopencv_java3.so => libs/x86_64/libopencv_java3.so
+22:47:20 **** Clean-only build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build clean 
+[x86_64] Clean          : CaptureJNI [x86_64]
+[x86_64] Clean          : gnustl_shared [x86_64]
+[x86_64] Clean          : gnustl_static [x86_64]
+[x86_64] Clean          : opencv_java3 [x86_64]
+22:47:33 **** Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[x86_64] Compile++      : CaptureJNI <= CaptureJNI.cpp
+[x86_64] Compile++      : CaptureJNI <= capture.cpp
+[x86_64] Compile++      : CaptureJNI <= cvmethods.cpp
+[x86_64] Compile++      : CaptureJNI <= geometry.cpp
+[x86_64] Compile++      : CaptureJNI <= focus.cpp
+[x86_64] Compile++      : CaptureJNI <= support.cpp
+[x86_64] Compile++      : CaptureJNI <= filters.cpp
+[x86_64] Prebuilt       : libopencv_java3.so <= jni/../../../../OpenCV-android-sdk/sdk/native/jni/../libs/x86_64/
+[x86_64] SharedLibrary  : libCaptureJNI.so
+[x86_64] Install        : libCaptureJNI.so => libs/x86_64/libCaptureJNI.so
+[x86_64] Install        : libopencv_java3.so => libs/x86_64/libopencv_java3.so
+22:52:18 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[x86_64] Install        : libCaptureJNI.so => libs/x86_64/libCaptureJNI.so
+[x86_64] Install        : libopencv_java3.so => libs/x86_64/libopencv_java3.so
+22:52:42 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[x86_64] Install        : libCaptureJNI.so => libs/x86_64/libCaptureJNI.so
+[x86_64] Install        : libopencv_java3.so => libs/x86_64/libopencv_java3.so
+22:53:04 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[x86_64] Install        : libCaptureJNI.so => libs/x86_64/libCaptureJNI.so
+[x86_64] Install        : libopencv_java3.so => libs/x86_64/libopencv_java3.so
+22:57:14 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[x86] Compile++      : CaptureJNI <= CaptureJNI.cpp
+[x86] Compile++      : CaptureJNI <= capture.cpp
+[x86] Compile++      : CaptureJNI <= cvmethods.cpp
+[x86] Compile++      : CaptureJNI <= geometry.cpp
+[x86] Compile++      : CaptureJNI <= focus.cpp
+[x86] Compile++      : CaptureJNI <= support.cpp
+[x86] Compile++      : CaptureJNI <= filters.cpp
+[x86] Prebuilt       : libopencv_java3.so <= jni/../../../../OpenCV-android-sdk/sdk/native/jni/../libs/x86/
+[x86] SharedLibrary  : libCaptureJNI.so
+[x86] Install        : libCaptureJNI.so => libs/x86/libCaptureJNI.so
+[x86] Install        : libopencv_java3.so => libs/x86/libopencv_java3.so
+22:57:36 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[x86] Install        : libCaptureJNI.so => libs/x86/libCaptureJNI.so
+[x86] Install        : libopencv_java3.so => libs/x86/libopencv_java3.so
+22:59:21 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[x86] Install        : libCaptureJNI.so => libs/x86/libCaptureJNI.so
+[x86] Install        : libopencv_java3.so => libs/x86/libopencv_java3.so
+23:13:52 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= CaptureJNI.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= capture.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= cvmethods.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= geometry.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= focus.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= support.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= filters.cpp
+[armeabi-v7a] SharedLibrary  : libCaptureJNI.so
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+23:14:07 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+23:15:35 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+23:18:42 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+23:22:41 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+23:58:04 **** Clean-only build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build clean 
+[armeabi-v7a] Clean          : CaptureJNI [armeabi-v7a]
+[armeabi-v7a] Clean          : gnustl_shared [armeabi-v7a]
+[armeabi-v7a] Clean          : gnustl_static [armeabi-v7a]
+[armeabi-v7a] Clean          : opencv_java3 [armeabi-v7a]
+23:58:32 **** Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= CaptureJNI.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= capture.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= cvmethods.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= geometry.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= focus.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= support.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= filters.cpp
+[armeabi-v7a] Prebuilt       : libopencv_java3.so <= jni/../../../../OpenCV-android-sdk/sdk/native/jni/../libs/armeabi-v7a/
+[armeabi-v7a] SharedLibrary  : libCaptureJNI.so
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+00:00:35 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+00:00:47 **** Clean-only build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build clean 
+[armeabi-v7a] Clean          : CaptureJNI [armeabi-v7a]
+[armeabi-v7a] Clean          : gnustl_shared [armeabi-v7a]
+[armeabi-v7a] Clean          : gnustl_static [armeabi-v7a]
+[armeabi-v7a] Clean          : opencv_java3 [armeabi-v7a]
+00:01:02 **** Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= CaptureJNI.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= capture.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= cvmethods.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= geometry.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= focus.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= support.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= filters.cpp
+[armeabi-v7a] Prebuilt       : libopencv_java3.so <= jni/../../../../OpenCV-android-sdk/sdk/native/jni/../libs/armeabi-v7a/
+[armeabi-v7a] SharedLibrary  : libCaptureJNI.so
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin/arm-linux-androideabi-strip:./libs/armeabi-v7a/stYZjaet[.rodata]: No space left on device
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin/arm-linux-androideabi-strip:./libs/armeabi-v7a/stYZjaet: No space left on device
+make: *** [libs/armeabi-v7a/libopencv_java3.so] Error 1
+make: *** Deleting file `libs/armeabi-v7a/libopencv_java3.so'
+00:02:56 **** Clean-only build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build clean 
+[armeabi-v7a] Clean          : CaptureJNI [armeabi-v7a]
+[armeabi-v7a] Clean          : gnustl_shared [armeabi-v7a]
+[armeabi-v7a] Clean          : gnustl_static [armeabi-v7a]
+[armeabi-v7a] Clean          : opencv_java3 [armeabi-v7a]
+00:03:02 **** Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= CaptureJNI.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= capture.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= cvmethods.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= geometry.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= focus.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= support.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= filters.cpp
+[armeabi-v7a] Prebuilt       : libopencv_java3.so <= jni/../../../../OpenCV-android-sdk/sdk/native/jni/../libs/armeabi-v7a/
+[armeabi-v7a] SharedLibrary  : libCaptureJNI.so
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+00:07:37 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+00:08:42 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+00:14:22 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+00:15:29 **** Clean-only build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build clean 
+[armeabi-v7a] Clean          : CaptureJNI [armeabi-v7a]
+[armeabi-v7a] Clean          : gnustl_shared [armeabi-v7a]
+[armeabi-v7a] Clean          : gnustl_static [armeabi-v7a]
+[armeabi-v7a] Clean          : opencv_java3 [armeabi-v7a]
+00:15:35 **** Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= CaptureJNI.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= capture.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= cvmethods.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= geometry.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= focus.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= support.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= filters.cpp
+[armeabi-v7a] Prebuilt       : libopencv_java3.so <= jni/../../../../OpenCV-android-sdk/sdk/native/jni/../libs/armeabi-v7a/
+[armeabi-v7a] SharedLibrary  : libCaptureJNI.so
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+00:15:57 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+00:20:05 **** Clean-only build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build clean 
+[armeabi-v7a] Clean          : CaptureJNI [armeabi-v7a]
+[armeabi-v7a] Clean          : gnustl_shared [armeabi-v7a]
+[armeabi-v7a] Clean          : gnustl_static [armeabi-v7a]
+[armeabi-v7a] Clean          : opencv_java3 [armeabi-v7a]
+00:20:12 **** Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= CaptureJNI.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= capture.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= cvmethods.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= geometry.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= focus.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= support.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= filters.cpp
+[armeabi-v7a] Prebuilt       : libopencv_java3.so <= jni/../../../../OpenCV-android-sdk/sdk/native/jni/../libs/armeabi-v7a/
+[armeabi-v7a] SharedLibrary  : libCaptureJNI.so
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+00:20:52 **** Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+00:38:41 **** Incremental Build of configuration Default for project CameraBlank ****
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/ndk-build all 
+Android NDK: WARNING:jni/Android.mk:CaptureJNI: non-system libraries in linker flags: -lopencv_java3    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= CaptureJNI.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= capture.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= cvmethods.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= geometry.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= focus.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= support.cpp
+[armeabi-v7a] Compile++ thumb: CaptureJNI <= filters.cpp
+[armeabi-v7a] SharedLibrary  : libCaptureJNI.so
+/home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /home/rgpeach10/Documents/Workspace/AndroidSDK/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO jni/../../../../OpenCV-android-sdk/sdk/native/jni/../libs/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libCaptureJNI.so => libs/armeabi-v7a/libCaptureJNI.so
